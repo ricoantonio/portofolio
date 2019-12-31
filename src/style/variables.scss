@@ -1,0 +1,53 @@
+// Basic Color
+$white: #ffffff;
+$black: #000000;
+$base-color: #444;
+$background: #777777;
+$background-light: #f8faf9;
+
+// Blue
+$blue: #1888d2;
+$blue-light: lighten($blue, 6%);
+$blue-dark: darken($blue, 6%);
+$blue-bottom: #3c9ad9;
+$blue-background: #1676b6;
+$blue-text: #8093a7;
+
+// Green
+$green: #5bbc2e;
+$green-light: lighten($green, 6%);
+$green-dark: darken($green, 6%);
+$green-teal: #19d2a0;
+
+// Orange
+$orange: #fea138;
+$orange-light: lighten($orange, 6%);
+$orange-dark: darken($orange, 6%);
+$orange-back: #ffc583;
+
+// Gray
+$gray: #cccccc;
+$gray-light: lighten($gray, 17%);
+$gray-dark: darken($gray, 17%);
+$gray-hover: #e6e6e6;
+$gray-active: #bdbdbd;
+$gray-inactive: #d9dade;
+$gray-back: #e7ebf2;
+
+// Cream
+$cream: #fcf8e3;
+
+// Red
+$red: #de0706;
+
+// Border Radius
+$border-radius: 2px;
+
+// Button Height
+$button-height: 40px;
+
+// Font Size
+$font-size-base: 1.5rem;
+$font-size-small: 1.2rem;
+
+$shadow: 0 0 4px rgba(0, 0, 0, 0.1);
