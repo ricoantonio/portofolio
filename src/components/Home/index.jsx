@@ -4,10 +4,9 @@ import './style.scss'
 export class Home extends Component {
 
     state={
-        tempX:0,
-        tempY:0,
+        mouseX:0,
+        mouseY:0,
         objectArray:new Array(),
-        IE:null,
         done:false
     }
     
@@ -76,9 +75,21 @@ export class Home extends Component {
         return (
             <>
                 {this.state.done?
-                    <div>
+                    <div 
+                    style={{height:"640px"}}
+                    onMouseMove={(e)=>{this.setState({
+                        mouseX:e.screenX,
+                        mouseY:e.screenY
+                    })}}>
                         
-                    </div>: 
+                        <h1>{this.state.mouseX}</h1>
+                        <h1>{this.state.mouseY}</h1>
+
+                        <div>
+                            
+                        </div>
+                    </div>
+                        : 
                     <div>
                         loading
                     </div>
