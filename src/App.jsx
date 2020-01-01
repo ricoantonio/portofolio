@@ -1,10 +1,9 @@
 import React from 'react';
-import logo from '../../logo.svg';
 import {Route,BrowserRouter} from 'react-router-dom'
-import '../../style/global.scss';
+import './style/global.scss';
+import Home from './components/Home';
+import Header from './components/Header';
 
-import Home from '../Home';
-import Header from '../Header';
 
 
 function App() {
