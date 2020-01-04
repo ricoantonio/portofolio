@@ -11,16 +11,36 @@ export class Home extends Component {
     }
     
     componentDidMount() {
-        // this.fillObjectArray()
+        
         // this.positionDivs()
-        
+        // this.moveDiv(this.state.mouseX)
+        // this.moveDiv(this.state.mouseX)
         this.setState({done:true})
-    }
-    
-
-    render() {
-
         
+        
+    }
+    // fillObjectArray(){
+    //     var oneDiv = this.one
+    //     var oneX = 312; //position div from half width of the page
+    //     var oneY = 33;
+    //     var oneFactor = 0.05; //parallax shift factor, the bigger the value, the more it shift for parallax movement
+    //     var oneArray = new Array();
+    //     oneArray.push(oneDiv, oneX, oneY, oneFactor);
+    //     this.state.objectArray.push(oneArray);
+    // }
+
+    
+    // moveDiv(tempX)
+    
+    // {	
+    //     console.log(this.state.objectArray[0][0]);
+    //     for (var i=0;i<this.state.objectArray.length;i++)
+    //     {
+    //         var yourDivPositionX = this.state.objectArray[i][3] * (0.5 * window.innerWidth - tempX) + this.state.objectArray[i][1];
+    //         this.state.objectArray[i][0].style.left = yourDivPositionX + 'px';
+    //     }
+    // }
+    render() {
         return (
             <>
                 {this.state.done?
@@ -30,34 +50,38 @@ export class Home extends Component {
                         mouseX:e.screenX,
                         mouseY:e.screenY
                     })}}>
-{/*                         
-                        <h1>{this.state.mouseX}</h1>
-                        <h1>{this.state.mouseY}</h1> */}
-
-                        <div className= "one" 
+                        <div className = "one"  
                         style={{
-                            backgroundPositionX:0.05*(this.state.mouseX-.5*window.innerWidth)+300, 
-                            backgroundPositionY:this.state.mouseY*-.05, 
+                            left: .05 * (0.5 * window.innerWidth - this.state.mouseX) + 323,
+                            backgroundPositionY: 380,
                             backgroundSize: "300px",
                             position:"absolute",
                             width:"100%",
                             height:"100%"
                             }}>
                         </div>
-                        <div className= "one" 
+                        <div className = "one"  
                         style={{
-                            backgroundPositionX:0.02*(this.state.mouseX-.5*window.innerWidth)+600, 
-                            backgroundPositionY:400, 
+                            left: .07 * (0.5 * window.innerWidth - this.state.mouseX) + 808,
+                            backgroundPositionY: 400,
                             backgroundSize: "300px",
                             position:"absolute",
                             width:"100%",
                             height:"100%"
                             }}>
                         </div>
-                        <div className= "one" 
+                        <div className = "one"  
                         style={{
-                            backgroundPositionX:0.05*(this.state.mouseX-.5*window.innerWidth)+1500, 
-                            backgroundPositionY:this.state.mouseY*-.05, 
+                            left: .03 * (0.5 * window.innerWidth - this.state.mouseX) + 900,
+                            backgroundSize: "300px",
+                            position:"absolute",
+                            width:"100%",
+                            height:"100%"
+                            }}>
+                        </div>
+                        <div className = "one"  
+                        style={{
+                            left: .02 * (0.5 * window.innerWidth - this.state.mouseX) + 323,
                             backgroundSize: "300px",
                             position:"absolute",
                             width:"100%",

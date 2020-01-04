@@ -30,6 +30,7 @@ body {
   color: $base-color;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 body[modal-is-active='true'],
 body[mobile-menu-is-active='true'] {
