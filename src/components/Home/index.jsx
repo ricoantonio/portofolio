@@ -52,9 +52,9 @@ export class Home extends Component {
                     })}}>
                         <div className = "one"  
                         style={{
-                            left: .05 * (0.5 * window.innerWidth - this.state.mouseX) + 323,
+                            left: .05 * (0.5 * window.innerWidth - this.state.mouseX) + 123,
                             backgroundPositionY: 380,
-                            backgroundSize: "300px",
+                            backgroundSize: "500px",
                             position:"absolute",
                             width:"100%",
                             height:"100%"
@@ -64,7 +64,7 @@ export class Home extends Component {
                         style={{
                             left: .07 * (0.5 * window.innerWidth - this.state.mouseX) + 808,
                             backgroundPositionY: 400,
-                            backgroundSize: "300px",
+                            backgroundSize: "900px",
                             position:"absolute",
                             width:"100%",
                             height:"100%"
@@ -72,8 +72,9 @@ export class Home extends Component {
                         </div>
                         <div className = "one"  
                         style={{
-                            left: .03 * (0.5 * window.innerWidth - this.state.mouseX) + 900,
+                            left: .02 * (0.5 * window.innerWidth - this.state.mouseX) + 1000,
                             backgroundSize: "300px",
+                            backgroundPositionY: 80,
                             position:"absolute",
                             width:"100%",
                             height:"100%"
@@ -81,8 +82,29 @@ export class Home extends Component {
                         </div>
                         <div className = "one"  
                         style={{
-                            left: .02 * (0.5 * window.innerWidth - this.state.mouseX) + 323,
+                            left: .02 * (0.5 * window.innerWidth - this.state.mouseX) + 200,
                             backgroundSize: "300px",
+                            backgroundPositionY: 120,
+                            position:"absolute",
+                            width:"100%",
+                            height:"100%"
+                            }}>
+                        </div>
+                        <div className = "one"  
+                        style={{
+                            left: .03 * (0.5 * window.innerWidth - this.state.mouseX) + 640,
+                            backgroundSize: "370px",
+                            backgroundPositionY: 170,
+                            position:"absolute",
+                            width:"100%",
+                            height:"100%"
+                            }}>
+                        </div>
+                        <div className = "one"  
+                        style={{
+                            left: .01 * (0.5 * window.innerWidth - this.state.mouseX) + 1050,
+                            backgroundSize: "80px",
+                            backgroundPositionY: 10,
                             position:"absolute",
                             width:"100%",
                             height:"100%"
