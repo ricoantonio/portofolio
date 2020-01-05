@@ -13,8 +13,6 @@ export class Footer extends Component {
                         About
                     </h3>
                 </div>
-                <div className="right">
-                </div>
             </>
         )
     }
