@@ -28,18 +28,6 @@ export class Home extends Component {
     //     oneArray.push(oneDiv, oneX, oneY, oneFactor);
     //     this.state.objectArray.push(oneArray);
     // }
-
-    
-    // moveDiv(tempX)
-    
-    // {	
-    //     console.log(this.state.objectArray[0][0]);
-    //     for (var i=0;i<this.state.objectArray.length;i++)
-    //     {
-    //         var yourDivPositionX = this.state.objectArray[i][3] * (0.5 * window.innerWidth - tempX) + this.state.objectArray[i][1];
-    //         this.state.objectArray[i][0].style.left = yourDivPositionX + 'px';
-    //     }
-    // }
     render() {
         return (
             <>
@@ -53,7 +41,7 @@ export class Home extends Component {
                         <div className = "one"  
                         style={{
                             left: .05 * (0.5 * window.innerWidth - this.state.mouseX) + 123,
-                            backgroundPositionY: 380,
+                            backgroundPositionY: .05 * (0.5 * window.innerHeight - this.state.mouseY) + 300,
                             backgroundSize: "500px",
                             position:"absolute",
                             width:"100%",
@@ -62,8 +50,8 @@ export class Home extends Component {
                         </div>
                         <div className = "one"  
                         style={{
-                            left: .07 * (0.5 * window.innerWidth - this.state.mouseX) + 808,
-                            backgroundPositionY: 400,
+                            left: .1 * (0.5 * window.innerWidth - this.state.mouseX) + 808,
+                            backgroundPositionY:  .1 * (0.5 * window.innerHeight - this.state.mouseY) + 408,
                             backgroundSize: "900px",
                             position:"absolute",
                             width:"100%",
@@ -73,8 +61,8 @@ export class Home extends Component {
                         <div className = "one"  
                         style={{
                             left: .02 * (0.5 * window.innerWidth - this.state.mouseX) + 1000,
+                            backgroundPositionY: .02 * (0.5 * window.innerHeight - this.state.mouseY) + 80,
                             backgroundSize: "300px",
-                            backgroundPositionY: 80,
                             position:"absolute",
                             width:"100%",
                             height:"100%"
@@ -83,8 +71,8 @@ export class Home extends Component {
                         <div className = "one"  
                         style={{
                             left: .02 * (0.5 * window.innerWidth - this.state.mouseX) + 200,
+                            backgroundPositionY: .02 * (0.5 * window.innerHeight - this.state.mouseY) + 120,
                             backgroundSize: "300px",
-                            backgroundPositionY: 120,
                             position:"absolute",
                             width:"100%",
                             height:"100%"
@@ -93,8 +81,8 @@ export class Home extends Component {
                         <div className = "one"  
                         style={{
                             left: .03 * (0.5 * window.innerWidth - this.state.mouseX) + 640,
+                            backgroundPositionY:  .03 * (0.5 * window.innerHeight - this.state.mouseY) + 170,
                             backgroundSize: "370px",
-                            backgroundPositionY: 170,
                             position:"absolute",
                             width:"100%",
                             height:"100%"
@@ -103,8 +91,8 @@ export class Home extends Component {
                         <div className = "one"  
                         style={{
                             left: .01 * (0.5 * window.innerWidth - this.state.mouseX) + 1050,
+                            backgroundPositionY: .01 * (0.5 * window.innerHeight - this.state.mouseY) + 10,
                             backgroundSize: "80px",
-                            backgroundPositionY: 10,
                             position:"absolute",
                             width:"100%",
                             height:"100%"
